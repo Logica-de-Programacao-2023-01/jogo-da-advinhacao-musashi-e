@@ -11,7 +11,7 @@ func main () {
 	result := rand.Intn(100)+1
 	inp:=0
 	fmt.Println("adivinhe um numero inteiro entre 1 e 100:")
-	y_n := "x"
+	s_n := "x"
 
 	n_Tentativas := make(map[int]int)
 	tentativa:= 1
@@ -22,9 +22,9 @@ func main () {
 		if inp == result {
 			fmt.Println("parabens você ganhou!!")
 			fmt.Printf("voce usou %d tentativas\n", n_Tentativas[tentativa])
-			fmt.Println("deseja jogar novamente? (y/n)")
-			fmt.Scanln(&y_n)
-			if y_n == "n" {
+			fmt.Println("deseja jogar novamente? (s/n)")
+			fmt.Scanln(&s_n)
+			if s_n == "n" {
 				break
 			} else {
 				tentativa++
